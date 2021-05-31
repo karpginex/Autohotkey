@@ -42,3 +42,16 @@ else
 return
 */
 
+
+;DisplaySwap
+
+XButton1 & RButton::
+Sendinput, {Ctrl down}{LWin down}{Right down}
+Sendinput, {Ctrl up}{LWin up}{Right up}
+return
+
+XButton1 & LButton::
+Sendinput, {Ctrl down}{LWin down}{Left down}
+Sendinput, {Ctrl up}{LWin up}{Left up}
+return
+
