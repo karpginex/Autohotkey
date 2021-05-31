@@ -55,3 +55,7 @@ Sendinput, {Ctrl down}{LWin down}{Left down}
 Sendinput, {Ctrl up}{LWin up}{Left up}
 return
 
+Xbutton2::
+Sendinput, {Lwin down}{Tab down}
+Sendinput, {Lwin up}{Tab up}
+return
