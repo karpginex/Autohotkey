@@ -59,3 +59,5 @@ Xbutton2::
 Sendinput, {Lwin down}{Tab down}
 Sendinput, {Lwin up}{Tab up}
 return
+
+F12::Suspend
