@@ -1,5 +1,5 @@
 ;mainAutohotkeyOnThisPC
-
+F12::Suspend
 
 ;musicPlayerSettings
 F3::
@@ -60,4 +60,15 @@ Sendinput, {Lwin down}{Tab down}
 Sendinput, {Lwin up}{Tab up}
 return
 
-F12::Suspend
+; find x,y positions
+^F1::
+MouseGetPos, X, Y
+Tooltip, %X% %Y%
+Clipboard = %X%, %Y%
+Sleep 1000
+Tooltip
+Return
+
+SC029::
+MouseClick, WheelDown, , , 50
+return
