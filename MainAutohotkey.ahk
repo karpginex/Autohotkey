@@ -70,5 +70,5 @@ Tooltip
 Return
 
 SC029::
-MouseClick, WheelDown, , , 50
+MouseClick, WheelDown, , , 150
 return
