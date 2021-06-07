@@ -70,5 +70,17 @@ Tooltip
 Return
 
 SC029::
-MouseClick, WheelDown, , , 150
+MouseClick, WheelDown, , , 1000
+sleep 200
+CoordMode Pixel  ;
+ImageSearch, FoundX, FoundY, 0, 0, 1920, 1080, Replyall.png
+FoundX += 80
+FoundY += 20
+if ErrorLevel = 2
+    MsgBox Error
+else if ErrorLevel = 1
+    MsgBox Error
+else
+    MouseClick, left, %FoundX%, %FoundY%
 return
+
